@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0
+}
+
+h1, span{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+}
+
+.h-up, .h-down{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box {
+    width: 500px;
+    height: 90vh;
+    background: #f2f2f2;
+    box-shadow: 5px 5px 10px 5px #a2a2a2;
+    position: relative
+}
+
+.header {
+    height: 150px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+ }
+ 
+ .winter-morning {background-image: url('../static/images/times/winter-morning.jpg');}
+ .winter-afternoon {background-image: url('../static/images/times/winter-afternoon.jpg');}
+ .winter-evening{background-image: url('../static/images/times/winter-evening.jpg');}
+ .winter-night {background-image: url('../static/images/times/winter-night.jpg');}
+
+ .spring-morning {background-image: url('../static/images/times/spring-morning.jpg');}
+ .spring-afternoon {background-image: url('../static/images/times/spring-afternoon.jpg');}
+ .spring-evening {background-image: url('../static/images/times/spring-evening.jpg');}
+ .spring-night {background-image: url('../static/images/times/spring-night.jpg');}
+
+ .autumn-morning {background-image: url('../static/images/times/autumn-morning.jpg');}
+ .autumn-afternoon {background-image: url('../static/images/times/autumn-afternoon.jpg');}
+ .autumn-evening {background-image: url('../static/images/times/autumn-evening.jpg');}
+ .autumn-night {background-image: url('../static/images/times/autumn-night.jpg');}
+
+ .summer-morning {background-image: url('../static/images/times/summer-morning.jpg');}
+ .summer-afternoon {background-image: url('../static/images/times/summer-afternoon.jpg');}
+ .summer-evening {background-image: url('../static/images/times/summer-evening.jpg');}
+ .summer-night {background-image: url('../static/images/times/summer-night.jpg');}
+
+.header h1 {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.form {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background: transparent;
+    border-bottom: solid 3px rgb(211, 211, 211);
+}
+
+.form input::placeholder {
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #db2777;
+    transition: 1s;
+}
+
+.form input {
+    transition: 1s;
+}
+
+.completed label {
+    text-decoration: line-through #0075ff;
+    color: #0075ff;
+}
+
+.todos {
+    padding: 0 20px;
+}
+
+.todo {
+    border-bottom: solid 2px rgb(211, 211, 211);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.buttons{
+    float: right;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button{
+    background: white;
+    border: none;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    padding: 5px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.buttons button:active{
+    border-bottom: 2px solid rgb(214, 221, 117);
+    transform: scale(0.95);
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #e2e2e2;
+    border-top: solid 1px rgb(112, 112, 112);
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+}
